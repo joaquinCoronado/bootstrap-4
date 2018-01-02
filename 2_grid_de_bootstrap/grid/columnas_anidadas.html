@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Columnas anidadas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="..\Bootstrap\css\bootstrap.min.css"></link>
+    
+    <style>
+        .container{
+            margin-top: 20px;
+        }
+
+        .row{
+            background: #e8e8e8;
+        }
+
+        .columna{
+            background: #f2f2f2;
+            text-align: center;
+            border: 1px solid #4d5061; 
+        }
+
+        .columna-interior{
+             background: #e8e8e8;
+             border: 1px solid #4d5061; 
+             padding: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="columna col-md-6">
+                Columna 1
+                <div class="row">
+                    <div class="col columna-interior">
+                        columna 1
+                    </div>
+                    <div class="col columna-interior">
+                        columna 2
+                    </div>
+                </div>  
+            </div>
+            <div class="columna col-md-6">
+                Columna 2
+                <div class="row justify-content-around>
+                    <div class="columna columna-interior col-4">columna 1</div>
+                    <div class="columna columna-interior col-4">columna 2</div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <script src="..\Bootstrap\js\jquery-3.2.1.min.js"></script>
+    <script src="..\Bootstrap\js\popper.min.js"></script>
+    <script src="..\Bootstrap\js\bootstrap.min.js"></script>
+</body>
+</html>
+
